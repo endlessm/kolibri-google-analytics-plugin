@@ -9,11 +9,18 @@ How can I install this plugin?
 1. Inside your Kolibri virtual environment:
     ``pip install kolibri_google_analytics_plugin``
 
-2. Activate the plugin:
+2. Configure your measurement ID in ``options.ini``:
 
-    ``kolibri plugin kolibri_google_analytics_plugin enable``
+.. code-block:: ini
 
-3. Restart Kolibri.
+  [GoogleAnalytics]
+  MEASUREMENT_ID = G-1234567890
+
+3. Activate the plugin:
+
+    ``kolibri plugin enable kolibri_google_analytics_plugin``
+
+4. Restart Kolibri.
 
 How can I install this plugin for development?
 ------------------------------

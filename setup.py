@@ -26,7 +26,7 @@ setup(
     description=description,
     long_description=long_description,
     author="Endless OS Foundation",
-    author_email="pwithnall@endlessos.org",
+    author_email="maintainers@endlessos.org",
     url=repo_url,
     packages=[str(plugin_name)],  # https://github.com/pypa/setuptools/pull/597
     entry_points={

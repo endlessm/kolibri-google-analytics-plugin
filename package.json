@@ -1,0 +1,19 @@
+{
+  "name": "GoogleAnalyticsPlugin",
+  "description": "A plugin to provide Google Analytics support for Kolibri",
+  "private": true,
+  "scripts": {
+    "build": "kolibri-tools build prod --plugins kolibri_google_analytics_plugin",
+    "clean": "kolibri-tools build clean --plugins kolibri_google_analytics_plugin",
+    "dev": "kolibri-tools build dev --plugins kolibri_google_analytics_plugin"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "kolibri-tools": "^0.15.0"
+  },
+  "engines": {
+    "node": "16.x",
+    "yarn": ">= 1.12.3",
+    "npm": ">= 3"
+  }
+}

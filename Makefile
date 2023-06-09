@@ -1,4 +1,4 @@
-.PHONY: help clean clean-assets clean-build clean-pyc assets dist release
+.PHONY: help clean clean-build clean-pyc dist release
 
 help:
 	@echo "clean-build - remove build artifacts"
@@ -6,10 +6,7 @@ help:
 	@echo "release - package and upload a release"
 	@echo "dist - package"
 
-clean: clean-assets clean-build clean-pyc
-
-clean-assets:
-	yarn run clean
+clean: clean-build clean-pyc
 
 clean-build:
 	rm -fr build/
@@ -25,10 +22,7 @@ clean-pyc:
 	find . -name '*.pyo' -exec rm -f {} +
 	find . -name '*~' -exec rm -f {} +
 
-assets:
-	yarn run build
-
-dist: clean assets
+dist: clean
 	python setup.py sdist
 	python setup.py bdist_wheel --universal
 

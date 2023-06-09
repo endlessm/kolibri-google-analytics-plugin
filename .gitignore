@@ -1,3 +1,5 @@
 kolibri_google_analytics_plugin.egg-info/
 node_modules/
 yarn-error.log
+build/
+dist/

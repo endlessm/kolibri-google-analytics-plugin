@@ -39,6 +39,6 @@ class GoogleAnalyticsBaseHeadHook(FrontEndBaseHeadHook):
             logger.info("Google Analytics support enabled but MEASUREMENT_ID not set in options")
             return ""
 
-        return render_to_string("head_snippet.html", {
-            "measurement_id": conf.OPTIONS["GoogleAnalytics"]["MEASUREMENT_ID"],
+        return render_to_string("google_analytics/head_snippet.html", {
+            "measurement_id": measurement_id,
         })
